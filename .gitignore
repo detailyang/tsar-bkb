@@ -11,11 +11,6 @@
 *.obj
 *.elf
 
-# Linker output
-*.ilk
-*.map
-*.exp
-
 # Precompiled Headers
 *.gch
 *.pch
@@ -43,6 +38,7 @@
 # Debug files
 *.dSYM/
 *.su
+<<<<<<< HEAD
 *.idb
 *.pdb
 
@@ -53,3 +49,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+=======
+>>>>>>> 250eff4ddce055b80b892d6b0d30dcdda0fedc7c
