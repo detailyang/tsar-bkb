@@ -1,6 +1,6 @@
 CFLAGS = -Wall -fPIC --shared -g -O2
 CC = gcc
-INCLUDE_FLAGS = -I/usr/local/tsar/devel -I/opt/tsar/devel
+INCLUDE_FLAGS = -I/usr/local/tsar/devel -I/opt/tsar/include
 LINK = $(CC) $(INCLUDE_FLAGS) $(CFLAGS)
 
 
