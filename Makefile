@@ -1,7 +1,7 @@
 CFLAGS = -Wall -fPIC --shared -g -O2
 CC = gcc
-INCLUDE_DIR = /usr/local/tsar/devel
-LINK = $(CC) -I$(INCLUDE_DIR) $(CFLAGS)
+INCLUDE_FLAGS = -I/usr/local/tsar/devel -I/opt/tsar/devel
+LINK = $(CC) $(INCLUDE_FLAGS) $(CFLAGS)
 
 
 OBJS =  mod_bkb.so
