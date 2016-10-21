@@ -56,15 +56,15 @@ struct hostinfo {
 
 /* Structure for tsar */
 static struct mod_info bkb_info[] = {
-    {" count", SUMMARY_BIT,  0,  STATS_NULL},
-    {"   max", SUMMARY_BIT,  0,  STATS_NULL},
+    {" count", DETAIL_BIT,  0,  STATS_NULL},
+    {"   max", DETAIL_BIT,  0,  STATS_NULL},
     {"   hit", SUMMARY_BIT,  0,  STATS_NULL},
     {"   hps", DETAIL_BIT,  0,  STATS_NULL},
     {"   avg", SUMMARY_BIT,  0,  STATS_NULL},
     {" r_ver", DETAIL_BIT,  0,  STATS_NULL},
     {"ip_ver", DETAIL_BIT,  0,  STATS_NULL},
-    {"   run", SUMMARY_BIT,  0,  STATS_NULL},
-    {"   dry", SUMMARY_BIT,  0,  STATS_NULL},
+    {"   run", DETAIL_BIT,  0,  STATS_NULL},
+    {"   dry", DETAIL_BIT,  0,  STATS_NULL},
 };
 
 static void
