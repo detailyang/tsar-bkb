@@ -61,8 +61,8 @@ static struct mod_info bkb_info[] = {
     {"   hit", SUMMARY_BIT,  0,  STATS_NULL},
     {"   hps", DETAIL_BIT,  0,  STATS_NULL},
     {"   avg", SUMMARY_BIT,  0,  STATS_NULL},
-    {" r_ver", DETAIL_BIT,  0,  STATS_SUB_INTER},
-    {"ip_ver", DETAIL_BIT,  0,  STATS_SUB_INTER},
+    {" r_ver", DETAIL_BIT,  0,  STATS_NULL},
+    {"ip_ver", DETAIL_BIT,  0,  STATS_NULL},
     {"   run", SUMMARY_BIT,  0,  STATS_NULL},
     {"   dry", SUMMARY_BIT,  0,  STATS_NULL},
 };
@@ -243,7 +243,7 @@ set_bkb_record(struct module *mod, double st_array[],
     /* set st record */
     for (i = 0; i < mod->n_col; i++) {
         if ( i == 3) {
-            st_array[i] = cur_array[i] - pre_array[i];
+            st_array[i] = (cur_array[i] - pre_array[i]) * 1.0 / inter;
         } else if (i == 4) {
             st_array[i] = cur_array[i] / 1000.00;
         } else {
